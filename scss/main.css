@@ -1463,7 +1463,7 @@ ul[role=list] {
   position: relative;
   text-align: center;
   padding-block-end: 2.5rem;
-  min-height: 640px;
+  min-height: 750px;
 }
 @media screen and (min-width: 48em) {
   .hero__section {
