@@ -5,7 +5,7 @@
   text-align: center;
   padding-block-end: $size-12;
   // height: 100%;
-  min-height: 100vh; // 640px
+  min-height: 640px; // 640px
   @include mq(medium) {
     // min-height: 520px;
     padding-block-end: $size-5;
