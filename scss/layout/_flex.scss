@@ -1,0 +1,42 @@
+@use "../abstracts/" as *;
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include mq(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include mq(large) {
+    align-items: end;
+    align-items: center;
+  }
+}
+
+.f-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: end;
+}
+
+.items {
+  @include mq(small) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  @include mq(large) {
+    align-items: center;
+    justify-items: flex-end;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,49 @@
+$ff-base: "Space Grotesk", sans-serif;
+
+$ff-body: $ff-base;
+
+$font-sizes: (
+  "small": (
+    "100": 1rem,
+    //  * button
+    "150": 1rem,
+    //  * paragraph
+    "200": 1.125rem,
+    //  * span project skills
+    "300": 1.5rem,
+    //  * heading 3
+    "400": 2rem,
+    // * skills
+    "500": 2.5rem,
+    //  * heading 1 and heading 2 and contact
+  ),
+  "medium": (
+    "150": 1.125rem,
+    // paragraph
+    "400": 3rem,
+    //skills
+    "500": 4.5rem,
+    // heading 1 and heading 2 and contact
+  ),
+  "large": (
+    "500": 5.5rem,
+    // heading 1 and heading 2 and contact
+  ),
+);
+
+$font-size-100: var(--fs-100);
+$font-size-150: var(--fs-150);
+$font-size-200: var(--fs-200);
+$font-size-300: var(--fs-300);
+$font-size-400: var(--fs-400);
+$font-size-500: var(--fs-500);
+
+$fs-body: $font-size-100;
+
+$-fw-500: 500;
+$-fw-700: 700;
+
+$fw-medium: $-fw-500;
+$fw-bold: $-fw-700;
+
+$fw-body: $fw-medium;

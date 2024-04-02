@@ -1,0 +1,39 @@
+@use "../abstracts/" as *;
+
+form {
+  max-width: 445px;
+  position: relative;
+  margin-inline: auto;
+  @include mq(large) {
+    max-width: 100%;
+  }
+  input,
+  textarea {
+    border-bottom: 1px solid $color-neutral-300;
+    padding-block: $size-1;
+    padding-inline-start: 1.375rem;
+    margin-block-start: $size-8;
+    color: $color-neutral-100;
+    font-weight: $fw-bold;
+    &::placeholder {
+      text-transform: uppercase;
+    }
+  }
+
+  input[type="submit"] {
+    padding-inline-start: 0px;
+  }
+  .form__field.error input {
+    border-bottom-color: red;
+  }
+  .form__field.seccess input {
+    border-bottom-color: green;
+  }
+  & small {
+    text-align: end;
+    font-size: 0.75rem;
+    line-height: 16px;
+    letter-spacing: -0.17px;
+    color: red;
+  }
+}

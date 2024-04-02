@@ -1,0 +1,14 @@
+/* FONT FACE */
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  src: url("/assets/fonts/static/SpaceGroteskBold.woff2") format("woff2"),
+    url("/assets/fonts/static/SpaceGroteskBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  src: url("./assets/fonts/static/SpaceGroteskMedium.woff2") format("woff2"),
+    url("./assets/fonts/static/SpaceGroteskMedium.woff") format("woff");
+}

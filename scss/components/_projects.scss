@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.projects__section {
+  padding-block-start: $size-12;
+  padding-block-end: $size-12;
+  @include mq(medium) {
+    padding-block-start: $size-15;
+    padding-block-end: $size-15;
+  }
+  @include mq(large) {
+    padding-block-start: $size-20;
+    padding-block-end: $size-19;
+  }
+  span {
+    // display: block;
+    font-size: $font-size-200;
+    text-transform: uppercase;
+    color: $color-neutral-300;
+    font-weight: normal;
+    margin-inline-end: 1rem;
+  }
+  .button {
+    margin-inline-end: 1rem;
+  }
+  canvas {
+    display: none;
+    @include mq(large) {
+      display: block;
+    }
+  }
+  h2 {
+    @include mq(large) {
+      display: none;
+    }
+  }
+}

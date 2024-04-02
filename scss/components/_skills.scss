@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.skills__section {
+  position: relative;
+  padding-block-start: $size-12;
+  padding-block-end: $size-12;
+  overflow-x: hidden;
+  @include mq(medium) {
+    padding-block-start: $size-5;
+    padding-block-end: $size-15;
+  }
+  @include mq(large) {
+    padding-block-start: $size-15;
+    padding-block-end: $size-20;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 530px;
+    height: 129px;
+    background-image: url("../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    right: -20%;
+    bottom: 0;
+  }
+  ul {
+    margin-block-start: 2.5rem;
+    margin-block-end: 1.1rem;
+    li {
+      text-align: center;
+      span {
+        font-size: $font-size-400;
+        text-transform: capitalize;
+        letter-spacing: -1px;
+        line-height: 1;
+        font-weight: $fw-bold;
+        padding-block-end: 0.875;
+        display: block;
+        @include mq(medium) {
+          line-height: 56px;
+          letter-spacing: -1.5px;
+        }
+      }
+      @include mq(medium) {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+footer {
+  padding-block-start: $size-11;
+  padding-block-end: $size-17;
+  background-color: $color-neutral-900;
+  @include mq(medium) {
+    // padding-block-start: $size-3_0;
+    // padding-block-end: $size-9_0;
+  }
+  .footer {
+    padding-block-start: $size-12;
+  }
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+  line-height: 32px;
+  letter-spacing: -0.33px;
+}

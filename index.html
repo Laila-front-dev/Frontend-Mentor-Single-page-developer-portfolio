@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS LINK STYLE -->
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="d-flex">
+          <div>
+            <span class="logo">adamkeyes</span>
+          </div>
+          <div>
+            <ul role="list" class="f-flex">
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><img src="./assets/images/icon-github.svg" alt="github logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.frontendmentor.io/" target="_blank"
+                  ><img
+                    src="./assets/images/icon-frontend-mentor.svg"
+                    alt="frontend mentor logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    src="./assets/images/icon-linkedin.svg"
+                    alt="linkedin logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=en" target="_blank"
+                  ><img
+                    src="./assets/images/icon-twitter.svg"
+                    alt="twitter logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero__section">
+        <div class="container">
+          <div class="d-grid grid__auto__flow">
+            <div class="flow | hero__details">
+              <h1 class="heading-1">
+                Nice to meet you! I’m <span>Adam Keyes.</span>
+              </h1>
+              <canvas
+                id="canvas1"
+                data-canvas="hero"
+                width="1200"
+                height="400"
+              ></canvas>
+              <p>
+                Based in the UK, I’m a front-end developer passionate about
+                building accessible web apps that users love.
+              </p>
+              <button class="button">contact me</button>
+            </div>
+            <picture>
+              <!-- <div class="grid-row"> -->
+              <source
+                media="(max-width: 375px)"
+                srcset="./assets/images/image-profile-mobile.webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/images/image-profile-tablet.png"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="./assets/images/image-profile-tablet-desktop.png"
+              />
+              <img
+                class="hero__image"
+                src="./assets/images/image-profile-mobile.webp"
+                alt="profile image"
+              />
+              <!-- </div> -->
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="skills__section">
+        <div class="container">
+          <div class="line"></div>
+          <ul
+            role="list"
+            class="d-grid grid__auto__fit gap justify__item__center | padding-block-12"
+          >
+            <li>
+              <span>HTML</span>
+              <p>4 Years Experience</p>
+            </li>
+            <li>
+              <span>CSS</span>
+              <p>4 Years Experience</p>
+            </li>
+            <li>
+              <span>javascript</span>
+              <p>3 Years Experience</p>
+            </li>
+            <li>
+              <span>accessibility</span>
+              <p>4 Years Experience</p>
+            </li>
+            <li>
+              <span>react</span>
+              <p>3 Years Experience</p>
+            </li>
+            <li>
+              <span>sass</span>
+              <p>3 Years Experience</p>
+            </li>
+          </ul>
+          <div class="line" data-line="none"></div>
+        </div>
+      </section>
+      <section class="projects__section">
+        <div class="container">
+          <div class="d-grid items | padding-block-end-12">
+            <div>
+              <h2 class="heading-2">Projects</h2>
+              <canvas
+                id="canvas1"
+                data-canvas="projects"
+                width="700"
+                height="200"
+              ></canvas>
+            </div>
+            <div style="justify-self: end">
+              <button class="button">contact me</button>
+            </div>
+          </div>
+          <div class="d-grid grid-columns gaps">
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-1-small.webp"
+                alt="project 1"
+              />
+              <h3 class="heading-3 | padding-block-start-1">
+                DESIGN PORTFOLIO
+              </h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-2-small.webp"
+                alt="project 2"
+              />
+              <h3 class="heading-3 | padding-block-start-1">
+                E-LEARNING LANDING PAGE
+              </h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-3-small.webp"
+                alt="project 3"
+              />
+              <h3 class="heading-3 | padding-block-start-1">TODO WEB APP</h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-4-small.webp"
+                alt="project 4"
+              />
+              <h3 class="heading-3 | padding-block-start-1">
+                ENTERTAINMENT WEB APP
+              </h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-5-small.webp"
+                alt="project 5"
+              />
+              <h3 class="heading-3 | padding-block-start-1">MEMORY GAME</h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+            <div class="card | flow__card">
+              <img
+                src="./assets/images/thumbnail-project-6-small.webp"
+                alt="project 6"
+              />
+              <h3 class="heading-3 | padding-block-start-1">
+                ART GALLERY SHOWCASE
+              </h3>
+              <div class="padding-block-end-1">
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+              </div>
+              <div class="buttons">
+                <button class="button">view project</button>
+                <button class="button">view code</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact__section">
+        <div class="container">
+          <div class="d-grid grid__event__columns">
+            <div class="text__align">
+              <h2 class="heading-2">contact</h2>
+              <canvas
+                id="canvas1"
+                data-canvas="contact"
+                width="700"
+                height="200"
+              ></canvas>
+              <p data-type="wide">
+                I would love to hear about your project and how I could help.
+                Please fill in the form, and I’ll get back to you as soon as
+                possible.
+              </p>
+            </div>
+            <div>
+              <form action="/" class="d-grid error" id="sendmessage">
+                <div class="d-grid | form__field">
+                  <input
+                    id="username"
+                    type="text"
+                    name="name"
+                    placeholder="name"
+                    autocomplete="off"
+                  />
+                  <small></small>
+                </div>
+                <div class="d-grid | form__field">
+                  <input
+                    id="useremail"
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    autocomplete="off"
+                  />
+                  <small></small>
+                </div>
+                <textarea name="text" placeholder="message"></textarea>
+                <div class="flex | form__field">
+                  <input type="submit" value="send message" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="line"></div>
+        <div class="footer | d-flex">
+          <div>
+            <span class="logo">adamkeyes</span>
+          </div>
+          <div>
+            <ul role="list" class="f-flex">
+              <li>
+                <a href="https://github.com/" target="_blank"
+                  ><img src="./assets/images/icon-github.svg" alt="github logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.frontendmentor.io/" target="_blank"
+                  ><img
+                    src="./assets/images/icon-frontend-mentor.svg"
+                    alt="frontend mentor logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img
+                    src="./assets/images/icon-linkedin.svg"
+                    alt="linkedin logo"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=en" target="_blank"
+                  ><img
+                    src="./assets/images/icon-twitter.svg"
+                    alt="twitter logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

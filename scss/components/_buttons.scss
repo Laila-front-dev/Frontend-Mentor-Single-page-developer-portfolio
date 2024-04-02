@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+.button,
+input[type="submit"] {
+  width: fit-content;
+  padding-block-end: 15px;
+  color: $color-neutral-100;
+  border-bottom: 2px solid $color-accent-300;
+  text-transform: uppercase;
+  font-size: $font-size-100;
+  letter-spacing: 2.29px;
+  line-height-step: 30px;
+  cursor: pointer;
+}

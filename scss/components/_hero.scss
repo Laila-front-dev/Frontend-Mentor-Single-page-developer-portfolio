@@ -1,0 +1,95 @@
+@use "../abstracts/" as *;
+
+.hero__section {
+  position: relative;
+  text-align: center;
+  padding-block-end: $size-12;
+  height: 100%;
+  min-height: 640px;
+  @include mq(medium) {
+    min-height: 520px;
+    padding-block-end: $size-5;
+    text-align: left;
+  }
+  @include mq(large) {
+    padding-block-end: $size-15;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    max-width: 530px;
+    height: 129px;
+    background-image: url("../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    inset: 0 0 0 -100%;
+    @include mq(medium) {
+      inset: 0 0 0 -40%;
+    }
+    @include mq(medium) {
+      inset: 30px 0 0 -20%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 129px;
+    background-image: url("../assets/images/pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    right: 0;
+    bottom: 0;
+  }
+  span {
+    border-bottom: 4px solid $color-accent-300;
+  }
+  .hero__image {
+    position: absolute;
+    z-index: 1;
+    max-width: 174px;
+    height: 383px;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+    @include mq(medium) {
+      max-width: 322px;
+      height: 600px;
+      right: 0;
+      left: auto;
+      transform: translate(0%, 0%);
+    }
+    @include mq(large) {
+      max-width: 445px;
+      right: 9%;
+    }
+  }
+
+  .hero__details {
+    position: relative;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(60%);
+    padding-block-start: $size-3;
+    z-index: 2;
+    @include mq(medium) {
+      top: -40%;
+    }
+    @include mq(large) {
+      width: 761px;
+      top: -50%;
+    }
+  }
+
+  canvas {
+    display: none;
+    @include mq(large) {
+      display: block;
+    }
+  }
+  h1 {
+    @include mq(large) {
+      display: none;
+    }
+  }
+}

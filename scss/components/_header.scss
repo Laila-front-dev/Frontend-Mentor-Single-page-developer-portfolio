@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.header {
+  position: relative;
+  z-index: 999;
+  padding-block-start: $size-3;
+  @include mq(medium) {
+    padding-block-start: $size-8;
+  }
+  @include mq(large) {
+    padding-block-start: $size-10;
+  }
+  ul[role="list"] {
+    @include mq(medium) {
+      padding-block-start: 0;
+    }
+    @include mq(large) {
+      padding-inline-end: 30px;
+    }
+  }
+}
+
+ul[role="list"] {
+  padding-block-start: 20px;
+}

@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.text__align {
+  text-align: center;
+  @include mq(large) {
+    text-align: left;
+  }
+}

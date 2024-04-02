@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.contact__section {
+  position: relative;
+  padding-block-start: $size-12;
+  background-color: $color-neutral-900;
+  overflow-x: hidden;
+  @include mq(medium) {
+    padding-block-start: $size-15;
+  }
+  @include mq(large) {
+    padding-block-start: $size-19;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 530px;
+    height: 129px;
+    background-image: url("../assets/images/pattern-rings.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    left: -15%;
+    bottom: 0;
+  }
+  canvas {
+    display: none;
+    @include mq(large) {
+      display: block;
+    }
+  }
+  h2 {
+    @include mq(large) {
+      display: none;
+    }
+  }
+}
