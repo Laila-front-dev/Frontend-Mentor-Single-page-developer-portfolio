@@ -1323,7 +1323,6 @@ body {
 @media screen and (min-width: 75em) {
   .items {
     align-items: center;
-    justify-items: flex-end;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1459,6 +1458,11 @@ ul[role=list] {
   padding-block-start: 20px;
 }
 
+header img,
+footer img {
+  width: 24px;
+}
+
 .hero__section {
   position: relative;
   text-align: center;
@@ -1550,20 +1554,6 @@ ul[role=list] {
 @media screen and (min-width: 75em) {
   .hero__section .hero__details {
     width: 761px;
-    top: -50%;
-  }
-}
-.hero__section canvas {
-  display: none;
-}
-@media screen and (min-width: 75em) {
-  .hero__section canvas {
-    display: block;
-  }
-}
-@media screen and (min-width: 75em) {
-  .hero__section h1 {
-    display: none;
   }
 }
 
@@ -1650,19 +1640,6 @@ ul[role=list] {
 .projects__section .button {
   margin-inline-end: 1rem;
 }
-.projects__section canvas {
-  display: none;
-}
-@media screen and (min-width: 75em) {
-  .projects__section canvas {
-    display: block;
-  }
-}
-@media screen and (min-width: 75em) {
-  .projects__section h2 {
-    display: none;
-  }
-}
 
 .contact__section {
   position: relative;
@@ -1690,19 +1667,6 @@ ul[role=list] {
   background-position: bottom left;
   left: -15%;
   bottom: 0;
-}
-.contact__section canvas {
-  display: none;
-}
-@media screen and (min-width: 75em) {
-  .contact__section canvas {
-    display: block;
-  }
-}
-@media screen and (min-width: 75em) {
-  .contact__section h2 {
-    display: none;
-  }
 }
 
 form {

@@ -23,3 +23,11 @@
 ul[role="list"] {
   padding-block-start: 20px;
 }
+
+header,
+footer {
+  img {
+    width: 24px;
+    // height: 20px;
+  }
+}

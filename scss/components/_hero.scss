@@ -77,19 +77,19 @@
     }
     @include mq(large) {
       width: 761px;
-      top: -50%;
+      // top: -50%;
     }
   }
 
-  canvas {
-    display: none;
-    @include mq(large) {
-      display: block;
-    }
-  }
-  h1 {
-    @include mq(large) {
-      display: none;
-    }
-  }
+  // canvas {
+  //   display: none;
+  //   @include mq(large) {
+  //     display: block;
+  //   }
+  // }
+  // h1 {
+  //   @include mq(large) {
+  //     display: none;
+  //   }
+  // }
 }

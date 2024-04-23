@@ -22,15 +22,15 @@
   .button {
     margin-inline-end: 1rem;
   }
-  canvas {
-    display: none;
-    @include mq(large) {
-      display: block;
-    }
-  }
-  h2 {
-    @include mq(large) {
-      display: none;
-    }
-  }
+  // canvas {
+  //   display: none;
+  //   @include mq(large) {
+  //     display: block;
+  //   }
+  // }
+  // h2 {
+  //   @include mq(large) {
+  //     display: none;
+  //   }
+  // }
 }

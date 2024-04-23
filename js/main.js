@@ -68,7 +68,7 @@ const showSeccess = (input) => {
 };
 
 sendMessage.addEventListener("submit", function (event) {
-  event.preventDefault();
+  let valid = false;
 
   let isUsernameValid = checkUserName(),
     isEmailValid = checkEmail();
@@ -76,12 +76,17 @@ sendMessage.addEventListener("submit", function (event) {
   let isFormValid = isUsernameValid && isEmailValid;
 
   if (isFormValid) {
+    valid = true;
+  }
+
+  if (valid === false) {
+    event.preventDefault();
   }
 });
 
 sendMessage.addEventListener("input", function (e) {
   switch (e.target.id) {
-    case "usename":
+    case "username":
       checkUserName();
       break;
     case "useremail":
