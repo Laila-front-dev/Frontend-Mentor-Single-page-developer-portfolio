@@ -9,6 +9,10 @@
       href="./assets/images/favicon-32x32.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend Mentor | Single-page developer portfolio"
+    />
     <title>Frontend Mentor | Single-page developer portfolio</title>
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,11 +25,13 @@
     <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
+    <!-- Scroll Button -->
+    <span class="up"></span>
     <header class="header">
       <div class="container">
         <div class="d-flex">
           <div>
-            <span class="logo">adamkeyes</span>
+            <a href="index.html"><span class="logo">adamkeyes</span></a>
           </div>
           <div>
             <ul role="list" class="f-flex">
@@ -55,13 +61,6 @@
                     alt="twitter logo"
                 /></a>
               </li>
-              <li>
-                <a href="https://t.me/tubesvideos" target="_blank"
-                  ><img
-                    src="./assets/images/icon-telegram.svg"
-                    alt="twitter logo"
-                /></a>
-              </li>
             </ul>
           </div>
         </div>
@@ -71,24 +70,17 @@
       <section class="hero__section">
         <div class="container">
           <div class="d-grid grid__auto__flow">
-            <div class="flow | hero__details">
+            <div class="flow | hero__details hidden">
               <h1 class="heading-1">
                 Nice to meet you! I’m <span>Adam Keyes.</span>
               </h1>
-              <!-- <canvas
-                id="canvas1"
-                data-canvas="hero"
-                width="1200"
-                height="400"
-              ></canvas> -->
               <p>
                 Based in the UK, I’m a front-end developer passionate about
                 building accessible web apps that users love.
               </p>
-              <button class="button">contact me</button>
+              <a href="#contact" class="button">contact me</a>
             </div>
             <picture>
-              <!-- <div class="grid-row"> -->
               <source
                 media="(max-width: 375px)"
                 srcset="./assets/images/image-profile-mobile.webp"
@@ -106,7 +98,6 @@
                 src="./assets/images/image-profile-mobile.webp"
                 alt="profile image"
               />
-              <!-- </div> -->
             </picture>
           </div>
         </div>
@@ -114,31 +105,29 @@
       <section class="skills__section">
         <div class="container">
           <div class="line"></div>
-          <ul
-            role="list"
-            class="d-grid grid__auto__fit gap justify__item__center | padding-block-12"
-          >
-            <li>
+          <ul role="list" class="d-grid grid__auto__fit gap | padding-block-12">
+            <li class="skill hidden">
               <span>HTML</span>
               <p>4 Years Experience</p>
             </li>
-            <li>
+
+            <li class="skill hidden">
               <span>CSS</span>
               <p>4 Years Experience</p>
             </li>
-            <li>
+            <li class="skill hidden">
               <span>javascript</span>
               <p>3 Years Experience</p>
             </li>
-            <li>
+            <li class="skill hidden">
               <span>accessibility</span>
               <p>4 Years Experience</p>
             </li>
-            <li>
+            <li class="skill hidden">
               <span>react</span>
               <p>3 Years Experience</p>
             </li>
-            <li>
+            <li class="skill hidden">
               <span>sass</span>
               <p>3 Years Experience</p>
             </li>
@@ -151,19 +140,13 @@
           <div class="d-grid items | padding-block-end-12">
             <div>
               <h2 class="heading-2">Projects</h2>
-              <!-- <canvas
-                id="canvas1"
-                data-canvas="projects"
-                width="700"
-                height="200"
-              ></canvas> -->
             </div>
             <div style="justify-self: end">
-              <button class="button">contact me</button>
+              <a href="#contact" class="button">contact me</a>
             </div>
           </div>
           <div class="d-grid grid-columns gaps">
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-1-small.webp"
                 alt="project 1"
@@ -180,7 +163,7 @@
                 <button class="button">view code</button>
               </div>
             </div>
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-2-small.webp"
                 alt="project 2"
@@ -197,7 +180,7 @@
                 <button class="button">view code</button>
               </div>
             </div>
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-3-small.webp"
                 alt="project 3"
@@ -213,7 +196,7 @@
                 <button class="button">view code</button>
               </div>
             </div>
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-4-small.webp"
                 alt="project 4"
@@ -231,7 +214,7 @@
                 <button class="button">view code</button>
               </div>
             </div>
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-5-small.webp"
                 alt="project 5"
@@ -247,7 +230,7 @@
                 <button class="button">view code</button>
               </div>
             </div>
-            <div class="card | flow__card">
+            <div class="card | flow__card project hidden">
               <img
                 src="./assets/images/thumbnail-project-6-small.webp"
                 alt="project 6"
@@ -268,24 +251,19 @@
           </div>
         </div>
       </section>
-      <section class="contact__section">
+      <section class="contact__section" id="contact">
         <div class="container">
           <div class="d-grid grid__event__columns">
-            <div class="text__align">
+            <div class="text__align hidden">
               <h2 class="heading-2">contact</h2>
-              <!-- <canvas
-                id="canvas1"
-                data-canvas="contact"
-                width="700"
-                height="200"
-              ></canvas> -->
+
               <p data-type="wide">
                 I would love to hear about your project and how I could help.
                 Please fill in the form, and I’ll get back to you as soon as
                 possible.
               </p>
             </div>
-            <div>
+            <div class="contact hidden">
               <form
                 target="_blank"
                 action="https://formsubmit.co/youlaila.leila@gmail.com
@@ -356,13 +334,6 @@
                 <a href="https://twitter.com/?lang=en" target="_blank"
                   ><img
                     src="./assets/images/icon-twitter.svg"
-                    alt="twitter logo"
-                /></a>
-              </li>
-              <li>
-                <a href="https://t.me/tubesvideos" target="_blank"
-                  ><img
-                    src="./assets/images/icon-telegram.svg"
                     alt="twitter logo"
                 /></a>
               </li>

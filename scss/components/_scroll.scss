@@ -1,0 +1,87 @@
+@use "../abstracts/" as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Scroll Bar
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color-neutral-100;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color-neutral-900;
+}
+
+// Scroll Button
+
+.up {
+  position: fixed;
+  bottom: 10px;
+  right: -50px;
+  background-color: $color-neutral-100;
+  color: $color-primary-900;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999;
+  transition: 350ms ease-in-out;
+  &::before {
+    content: "\2191";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  &.show {
+    right: 10px;
+  }
+}
+
+// Scroll
+
+.hero__details.hidden {
+  position: relative;
+  opacity: 0;
+  transform: translate(-200px, 60%);
+  transition: all 1s;
+}
+
+.hero__details.showing {
+  opacity: 1;
+  transform: translate(0px, 60%);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 1s;
+}
+
+.showing {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill:nth-child(2),
+.skill:nth-child(5),
+.contact,
+.project:nth-child(2),
+.project:nth-child(4),
+.project:nth-child(6) {
+  transition-delay: 200ms;
+}
+
+.skill:nth-child(3),
+.skill:nth-child(6) {
+  transition-delay: 400ms;
+}

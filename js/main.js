@@ -94,3 +94,38 @@ sendMessage.addEventListener("input", function (e) {
       break;
   }
 });
+
+// scroll Button
+
+const scrollButton = document.querySelector(".up");
+
+window.onscroll = function () {
+  // console.log(this.scrollY);
+  if (this.scrollY >= 700) {
+    scrollButton.classList.add("show");
+  } else {
+    scrollButton.classList.remove("show");
+  }
+};
+
+scrollButton.onclick = function () {
+  window.scrollTo({
+    top: 0,
+  });
+};
+
+// Scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showing");
+    } else {
+      entry.target.classList.remove("showing");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+
+hiddenElements.forEach((el) => observer.observe(el));
